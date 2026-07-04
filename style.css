@@ -6590,147 +6590,120 @@ header.scrolled .logo-text h2{
 }
 
 /*====================================
-        PREMIUM SMOOTH SCROLL
+      PREMIUM SMOOTH SCROLL
 ====================================*/
 
-html{
-
-    scroll-behavior:smooth;
-
+/* Lenis Settings */
+html.lenis{
+    height:auto;
 }
 
+.lenis.lenis-smooth{
+    scroll-behavior:auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent]{
+    overscroll-behavior:contain;
+}
+
+.lenis.lenis-stopped{
+    overflow:hidden;
+}
+
+.lenis.lenis-scrolling iframe{
+    pointer-events:none;
+}
+
+/* Better Rendering */
+html,
 body{
-
     overflow-x:hidden;
-
     -webkit-font-smoothing:antialiased;
-
     -moz-osx-font-smoothing:grayscale;
-
     text-rendering:optimizeLegibility;
-
 }
 
-/* Smooth animations */
-
-*{
-
-    transition:
-    background-color .35s ease,
-    border-color .35s ease,
-    color .35s ease;
-
-}
-
-/* Images */
-
-img{
-
-    user-select:none;
-
-    -webkit-user-drag:none;
-
-    image-rendering:auto;
-
-}
-
-/* Better GPU Rendering */
-
+/* GPU Acceleration */
 section,
-.card,
+.hero,
+.about,
+.services,
+.process,
+.why-us,
+.leadership,
+.contact,
+.footer,
 .service-card,
 .why-card,
 .process-card,
 .leader-image,
-.hero-right img{
-
+.hero-right img,
+.about-image img{
     transform:translateZ(0);
-
     backface-visibility:hidden;
-
     will-change:transform;
-
 }
 
-/*====================================
-      PREMIUM SCROLL REVEAL
-====================================*/
-
-.reveal{
-
-    opacity:0;
-
-    transform:translateY(80px);
-
-    transition:
-        opacity .9s cubic-bezier(.22,1,.36,1),
-        transform .9s cubic-bezier(.22,1,.36,1);
-
-    will-change:transform, opacity;
+/* Smooth Images */
+img{
+    display:block;
+    max-width:100%;
+    height:auto;
+    user-select:none;
+    -webkit-user-drag:none;
 }
 
-/* Active */
-
-.reveal.active{
-
-    opacity:1;
-
-    transform:translateY(0);
-
+/* Buttons */
+button,
+a{
+    -webkit-tap-highlight-color:transparent;
 }
 
-/* Different Effects */
-
-.reveal-left{
-
-    opacity:0;
-
-    transform:translateX(-80px);
-
-    transition:all .9s cubic-bezier(.22,1,.36,1);
-
+.facebook i{
+    font-size:18px;
+    margin-right:8px;
+    color:#1877F2;
 }
 
-.reveal-left.active{
-
-    opacity:1;
-
-    transform:translateX(0);
-
+.instagram i{
+    font-size:18px;
+    margin-right:8px;
+    color:#E4405F;
 }
 
-.reveal-right{
-
-    opacity:0;
-
-    transform:translateX(80px);
-
-    transition:all .9s cubic-bezier(.22,1,.36,1);
-
+.whatsapp i{
+    font-size:18px;
+    margin-right:8px;
+    color:#25D366;
 }
 
-.reveal-right.active{
-
-    opacity:1;
-
-    transform:translateX(0);
-
+.action-btn i{
+    font-size:18px;
+    margin-right:8px;
+    width:20px;
+    text-align:center;
 }
 
-.reveal-zoom{
-
-    opacity:0;
-
-    transform:scale(.92);
-
-    transition:all .9s cubic-bezier(.22,1,.36,1);
-
+.whatsapp i{
+    color:#25D366;
 }
 
-.reveal-zoom.active{
+.facebook i{
+    color:#1877F2;
+}
 
-    opacity:1;
+.instagram i{
+    color:#E4405F;
+}
 
-    transform:scale(1);
+.action-btn .fa-phone{
+    color:#22c55e;
+}
 
+.action-btn .fa-envelope{
+    color:#f59e0b;
+}
+
+.action-btn .fa-location-dot{
+    color:#ef4444;
 }
