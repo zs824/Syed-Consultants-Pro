@@ -837,8 +837,8 @@ header.scrolled {
     border-right:2px solid #d4af37;
 
     width:0;
-    animation: typing 5s steps(35, end) infinite,
-               blink .8s infinite;
+    animation: typing 6s steps(35, end) infinite,
+               blink .9s infinite;
 }
 
 /* typing animation */
@@ -856,7 +856,7 @@ header.scrolled {
 @media (max-width:768px){
 
     .typing-text{
-        font-size:22px;
+        font-size:20px;
     }
 
     @keyframes typing{
