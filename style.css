@@ -856,7 +856,7 @@ header.scrolled {
 @media (max-width:768px){
 
     .typing-text{
-        font-size:25px;
+        font-size:22px;
     }
 
     @keyframes typing{
