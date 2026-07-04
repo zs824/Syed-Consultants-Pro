@@ -116,3 +116,33 @@ card.style.transform="scale(1)";
 });
 
 });
+
+/*====================================
+      PREMIUM SCROLL REVEAL
+====================================*/
+
+const reveals = document.querySelectorAll(
+".reveal, .reveal-left, .reveal-right, .reveal-zoom"
+);
+
+const revealObserver = new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("active");
+
+}
+
+});
+
+},{
+threshold:.15
+});
+
+reveals.forEach(item=>{
+
+revealObserver.observe(item);
+
+});

@@ -6588,3 +6588,149 @@ header.scrolled .logo-text h2{
 .back-to-top:hover{
     transform: translateY(-3px);
 }
+
+/*====================================
+        PREMIUM SMOOTH SCROLL
+====================================*/
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+body{
+
+    overflow-x:hidden;
+
+    -webkit-font-smoothing:antialiased;
+
+    -moz-osx-font-smoothing:grayscale;
+
+    text-rendering:optimizeLegibility;
+
+}
+
+/* Smooth animations */
+
+*{
+
+    transition:
+    background-color .35s ease,
+    border-color .35s ease,
+    color .35s ease;
+
+}
+
+/* Images */
+
+img{
+
+    user-select:none;
+
+    -webkit-user-drag:none;
+
+    image-rendering:auto;
+
+}
+
+/* Better GPU Rendering */
+
+section,
+.card,
+.service-card,
+.why-card,
+.process-card,
+.leader-image,
+.hero-right img{
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+    will-change:transform;
+
+}
+
+/*====================================
+      PREMIUM SCROLL REVEAL
+====================================*/
+
+.reveal{
+
+    opacity:0;
+
+    transform:translateY(80px);
+
+    transition:
+        opacity .9s cubic-bezier(.22,1,.36,1),
+        transform .9s cubic-bezier(.22,1,.36,1);
+
+    will-change:transform, opacity;
+}
+
+/* Active */
+
+.reveal.active{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+
+/* Different Effects */
+
+.reveal-left{
+
+    opacity:0;
+
+    transform:translateX(-80px);
+
+    transition:all .9s cubic-bezier(.22,1,.36,1);
+
+}
+
+.reveal-left.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-right{
+
+    opacity:0;
+
+    transform:translateX(80px);
+
+    transition:all .9s cubic-bezier(.22,1,.36,1);
+
+}
+
+.reveal-right.active{
+
+    opacity:1;
+
+    transform:translateX(0);
+
+}
+
+.reveal-zoom{
+
+    opacity:0;
+
+    transform:scale(.92);
+
+    transition:all .9s cubic-bezier(.22,1,.36,1);
+
+}
+
+.reveal-zoom.active{
+
+    opacity:1;
+
+    transform:scale(1);
+
+}
