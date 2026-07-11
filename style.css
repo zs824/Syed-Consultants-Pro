@@ -6707,3 +6707,614 @@ a{
 .action-btn .fa-location-dot{
     color:#ef4444;
 }
+
+/*=========================================
+      PREMIUM NAVBAR LOGO V4
+      (Override Old CSS)
+=========================================*/
+
+.logo{
+    display:flex !important;
+    align-items:center !important;
+    gap:18px !important;
+    text-decoration:none !important;
+    flex-shrink:0;
+}
+
+.logo img{
+    width:68px !important;
+    height:68px !important;
+    object-fit:cover;
+    border-radius:50%;
+    transition:.35s ease;
+    flex-shrink:0;
+}
+
+.logo:hover img{
+    transform:scale(1.05);
+}
+
+.logo-text{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+    line-height:1 !important;
+}
+
+.logo-text h2{
+    margin:0 !important;
+    padding:0 !important;
+    font-family:'Cinzel',serif !important;
+    font-size:34px !important;
+    font-weight:700 !important;
+    letter-spacing:1px !important;
+    color:#ffffff !important;
+    text-transform:uppercase !important;
+    line-height:1.05 !important;
+}
+
+.firm-title{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center;
+    gap:14px !important;
+    margin:10px 0 8px !important;
+}
+
+.firm-title span{
+    display:block !important;
+    width:75px !important;
+    height:2px !important;
+    background:#D4AF37 !important;
+    border-radius:50px;
+}
+
+.firm-title h3{
+    margin:0 !important;
+    padding:0 !important;
+    font-family:'Poppins',sans-serif !important;
+    font-size:17px !important;
+    font-weight:700 !important;
+    letter-spacing:2px !important;
+    color:#D4AF37 !important;
+    white-space:nowrap;
+}
+
+.logo-text p{
+    margin:0 !important;
+    padding:0 !important;
+    font-family:'Poppins',sans-serif !important;
+    font-size:12px !important;
+    font-weight:600 !important;
+    color:#E6EAF2 !important;
+    letter-spacing:1.5px !important;
+    text-transform:uppercase;
+}
+
+.logo-text p b{
+    color:#D4AF37 !important;
+    font-weight:700;
+    margin:0 10px;
+}
+
+/* Hover */
+
+.logo:hover h2{
+    color:#ffffff;
+}
+
+.logo:hover .firm-title h3{
+    color:#FFD45A !important;
+}
+
+.logo:hover .firm-title span{
+    background:#FFD45A !important;
+}
+
+/*=========================
+       MOBILE
+==========================*/
+
+@media(max-width:991px){
+
+.logo{
+    gap:12px !important;
+}
+
+.logo img{
+    width:50px !important;
+    height:50px !important;
+}
+
+.logo-text h2{
+    font-size:19px !important;
+    letter-spacing:.5px !important;
+}
+
+.firm-title{
+    gap:6px !important;
+    margin:5px 0 !important;
+}
+
+.firm-title span{
+    width:28px !important;
+    height:2px !important;
+}
+
+.firm-title h3{
+    font-size:9px !important;
+    letter-spacing:1px !important;
+}
+
+.logo-text p{
+    font-size:7px !important;
+    letter-spacing:.4px !important;
+}
+
+.logo-text p b{
+    margin:0 3px !important;
+}
+
+}
+
+/* Extra Small */
+
+@media(max-width:480px){
+
+.logo img{
+    width:44px !important;
+    height:44px !important;
+}
+
+.logo-text h2{
+    font-size:16px !important;
+}
+
+.firm-title h3{
+    font-size:8px !important;
+}
+
+.logo-text p{
+    font-size:6px !important;
+}
+
+.firm-title span{
+    width:20px !important;
+}
+
+}
+
+/*=========================================
+      PREMIUM SIDEBAR LOGO (OVERRIDE)
+=========================================*/
+
+.side-header{
+    text-align:center !important;
+    padding:22px 15px !important;
+}
+
+.side-header img{
+    width:60px !important;
+    height:60px !important;
+    border-radius:50% !important;
+    object-fit:cover !important;
+    margin-bottom:10px !important;
+}
+
+.sidebar-logo-text{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+    justify-content:center !important;
+}
+
+/* SYED CONSULTANTS */
+
+.sidebar-logo-text h2{
+    margin:0 !important;
+    padding:0 !important;
+    font-family:'Cinzel',serif !important;
+    font-size:18px !important;
+    font-weight:700 !important;
+    color:#ffffff !important;
+    text-transform:uppercase !important;
+    letter-spacing:.8px !important;
+    line-height:1.1 !important;
+}
+
+/* LAW & TAX FIRM */
+
+.sidebar-firm-title{
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    gap:8px !important;
+    margin:7px 0 !important;
+}
+
+.sidebar-firm-title span{
+    display:block !important;
+    width:24px !important;
+    height:2px !important;
+    background:#D4AF37 !important;
+    border-radius:50px !important;
+}
+
+.sidebar-firm-title h3{
+    margin:0 !important;
+    padding:0 !important;
+    font-family:'Poppins',sans-serif !important;
+    font-size:9px !important;
+    font-weight:700 !important;
+    color:#D4AF37 !important;
+    letter-spacing:1px !important;
+    text-transform:uppercase !important;
+    white-space:nowrap !important;
+}
+
+/* ADVOCATES | TAX ADVISORS | HR CONSULTANTS */
+
+.sidebar-logo-text p{
+    margin:0 !important;
+    padding:0 !important;
+    font-family:'Poppins',sans-serif !important;
+    font-size:7px !important;
+    font-weight:600 !important;
+    color:#E8EDF5 !important;
+    text-transform:uppercase !important;
+    letter-spacing:.5px !important;
+    line-height:1.6 !important;
+}
+
+.sidebar-logo-text p b{
+    color:#D4AF37 !important;
+    margin:0 4px !important;
+}
+
+/* Hover */
+
+.sidebar-logo-text:hover h2{
+    color:#ffffff !important;
+}
+
+.sidebar-logo-text:hover .sidebar-firm-title h3{
+    color:#FFD45A !important;
+}
+
+.sidebar-logo-text:hover .sidebar-firm-title span{
+    background:#FFD45A !important;
+}
+
+/*=========================
+       MOBILE
+=========================*/
+
+@media(max-width:768px){
+
+.side-header{
+    padding:18px 12px !important;
+}
+
+.side-header img{
+    width:55px !important;
+    height:55px !important;
+}
+
+.sidebar-logo-text h2{
+    font-size:17px !important;
+}
+
+.sidebar-firm-title{
+    gap:6px !important;
+}
+
+.sidebar-firm-title span{
+    width:20px !important;
+}
+
+.sidebar-firm-title h3{
+    font-size:8px !important;
+}
+
+.sidebar-logo-text p{
+    font-size:6px !important;
+    letter-spacing:.3px !important;
+}
+
+}
+
+/*=====================================
+   BIGGER NAVBAR LOGO (OVERRIDE)
+======================================*/
+
+.logo{
+    display:flex !important;
+    align-items:center !important;
+    gap:16px !important;
+}
+
+.logo img{
+    width:96px !important;
+    height:96px !important;
+    min-width:96px !important;
+    min-height:96px !important;
+    max-width:96px !important;
+    max-height:96px !important;
+
+    object-fit:contain !important;
+    display:block !important;
+    flex-shrink:0 !important;
+
+    margin-top:-8px !important;
+    margin-bottom:-8px !important;
+}
+
+/* Navbar ki height same rahe */
+.navbar{
+    overflow:visible !important;
+}
+
+/* Mobile */
+@media(max-width:768px){
+
+.logo img{
+    width:68px !important;
+    height:68px !important;
+    min-width:68px !important;
+    min-height:68px !important;
+    max-width:68px !important;
+    max-height:68px !important;
+
+    margin-top:-5px !important;
+    margin-bottom:-5px !important;
+}
+
+}
+
+/*=========================================
+      PREMIUM FOOTER LOGO (OVERRIDE)
+=========================================*/
+
+.footer-logo{
+    display:flex !important;
+    align-items:center !important;
+    gap:16px !important;
+    margin-bottom:18px !important;
+}
+
+.footer-logo img{
+    width:70px !important;
+    height:70px !important;
+    object-fit:contain !important;
+    flex-shrink:0 !important;
+}
+
+.footer-logo-text{
+    display:flex !important;
+    flex-direction:column !important;
+    justify-content:center !important;
+}
+
+.footer-logo-text h2{
+    margin:0 !important;
+    font-family:'Cinzel',serif !important;
+    font-size:24px !important;
+    font-weight:700 !important;
+    color:#ffffff !important;
+    text-transform:uppercase !important;
+    letter-spacing:.8px !important;
+    line-height:1.1 !important;
+}
+
+.footer-firm-title{
+    display:flex !important;
+    align-items:center !important;
+    gap:8px !important;
+    margin:8px 0 !important;
+}
+
+.footer-firm-title span{
+    width:28px !important;
+    height:2px !important;
+    background:#D4AF37 !important;
+    border-radius:20px;
+}
+
+.footer-firm-title h3{
+    margin:0 !important;
+    font-size:10px !important;
+    font-weight:700 !important;
+    color:#D4AF37 !important;
+    letter-spacing:1px !important;
+    white-space:nowrap;
+}
+
+.footer-logo-text p{
+    margin:0 !important;
+    font-size:8px !important;
+    color:#E6EAF2 !important;
+    font-weight:600 !important;
+    letter-spacing:.5px !important;
+    text-transform:uppercase;
+    line-height:1.5;
+}
+
+.footer-logo-text p b{
+    color:#D4AF37 !important;
+    margin:0 5px;
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.footer-logo{
+    gap:12px !important;
+}
+
+.footer-logo img{
+    width:55px !important;
+    height:55px !important;
+}
+
+.footer-logo-text h2{
+    font-size:18px !important;
+}
+
+.footer-firm-title h3{
+    font-size:8px !important;
+}
+
+.footer-firm-title span{
+    width:20px !important;
+}
+
+.footer-logo-text p{
+    font-size:6px !important;
+}
+
+}
+
+/*=====================================
+      FOOTER ABOUT TEXT
+======================================*/
+
+.footer-about{
+    margin-top:14px !important;
+    max-width:300px !important;
+    font-size:15px !important;
+    line-height:1.8 !important;
+    color:#BFC7D5 !important;
+    font-weight:400 !important;
+    letter-spacing:.3px !important;
+}
+
+@media(max-width:768px){
+
+.footer-about{
+    max-width:100% !important;
+    font-size:14px !important;
+    line-height:1.7 !important;
+}
+
+}
+
+/*==================================
+   FOOTER RESPONSIVE FIX
+===================================*/
+
+/* Desktop */
+
+.footer-grid{
+    display:grid !important;
+    grid-template-columns:1.5fr 1fr 1fr 1fr !important;
+    gap:60px !important;
+}
+
+.footer-logo{
+    display:flex !important;
+    align-items:center !important;
+    gap:18px !important;
+}
+
+.footer-logo-text h2{
+    font-size:22px !important;
+    line-height:1 !important;
+    white-space:nowrap !important;
+}
+
+.footer-about{
+    max-width:360px !important;
+    margin-top:18px !important;
+}
+
+/*=========================
+        TABLET
+=========================*/
+
+@media(max-width:991px){
+
+.footer-grid{
+    grid-template-columns:1fr 1fr !important;
+    gap:40px !important;
+}
+
+.footer-logo{
+    gap:14px !important;
+}
+
+.footer-logo img{
+    width:60px !important;
+    height:60px !important;
+}
+
+.footer-logo-text h2{
+    font-size:20px !important;
+    white-space:normal !important;
+}
+
+.footer-about{
+    max-width:100% !important;
+}
+
+}
+
+/*=========================
+        MOBILE
+=========================*/
+
+@media(max-width:768px){
+
+.footer-grid{
+    grid-template-columns:1fr !important;
+    gap:30px !important;
+    text-align:center !important;
+}
+
+.footer-col{
+    display:flex !important;
+    flex-direction:column !important;
+    align-items:center !important;
+}
+
+.footer-logo{
+    justify-content:center !important;
+    gap:12px !important;
+}
+
+.footer-logo img{
+    width:55px !important;
+    height:55px !important;
+}
+
+.footer-logo-text h2{
+    font-size:18px !important;
+    line-height:1.1 !important;
+}
+
+.footer-about{
+    max-width:300px !important;
+    margin:15px auto 0 !important;
+    text-align:center !important;
+    line-height:1.7 !important;
+}
+
+}
+/*=========================================
+   MOBILE NAVBAR TEXT FIX
+=========================================*/
+
+@media (max-width:991px){
+
+.logo-text p{
+    font-size:8px !important;      /* Pehle 7px tha to sirf 1px bara */
+    letter-spacing:0.2px !important;
+    line-height:1.2 !important;
+    white-space:nowrap !important;  /* Ek line me rahe */
+}
+
+.logo-text p b{
+    margin:0 2px !important;        /* Separator ki spacing kam */
+}
+
+}
