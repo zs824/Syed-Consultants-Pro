@@ -6885,20 +6885,20 @@ a{
 }
 
 /*=========================================
-      PREMIUM SIDEBAR LOGO (OVERRIDE)
+      PREMIUM SIDEBAR LOGO (UPDATED)
 =========================================*/
 
 .side-header{
     text-align:center !important;
-    padding:22px 15px !important;
+    padding:16px 12px !important;
 }
 
 .side-header img{
-    width:60px !important;
-    height:60px !important;
+    width:48px !important;
+    height:48px !important;
     border-radius:50% !important;
     object-fit:cover !important;
-    margin-bottom:10px !important;
+    margin-bottom:8px !important;
 }
 
 .sidebar-logo-text{
@@ -6914,12 +6914,12 @@ a{
     margin:0 !important;
     padding:0 !important;
     font-family:'Cinzel',serif !important;
-    font-size:18px !important;
+    font-size:15px !important;
     font-weight:700 !important;
     color:#ffffff !important;
     text-transform:uppercase !important;
-    letter-spacing:.8px !important;
-    line-height:1.1 !important;
+    letter-spacing:.5px !important;
+    line-height:1.2 !important;
 }
 
 /* LAW & TAX FIRM */
@@ -6928,13 +6928,12 @@ a{
     display:flex !important;
     align-items:center !important;
     justify-content:center !important;
-    gap:8px !important;
-    margin:7px 0 !important;
+    gap:6px !important;
+    margin:5px 0 !important;
 }
 
 .sidebar-firm-title span{
-    display:block !important;
-    width:24px !important;
+    width:18px !important;
     height:2px !important;
     background:#D4AF37 !important;
     border-radius:50px !important;
@@ -6944,10 +6943,10 @@ a{
     margin:0 !important;
     padding:0 !important;
     font-family:'Poppins',sans-serif !important;
-    font-size:9px !important;
+    font-size:7px !important;
     font-weight:700 !important;
     color:#D4AF37 !important;
-    letter-spacing:1px !important;
+    letter-spacing:.8px !important;
     text-transform:uppercase !important;
     white-space:nowrap !important;
 }
@@ -6958,17 +6957,17 @@ a{
     margin:0 !important;
     padding:0 !important;
     font-family:'Poppins',sans-serif !important;
-    font-size:7px !important;
+    font-size:6px !important;
     font-weight:600 !important;
     color:#E8EDF5 !important;
     text-transform:uppercase !important;
-    letter-spacing:.5px !important;
-    line-height:1.6 !important;
+    letter-spacing:.3px !important;
+    line-height:1.5 !important;
 }
 
 .sidebar-logo-text p b{
     color:#D4AF37 !important;
-    margin:0 4px !important;
+    margin:0 3px !important;
 }
 
 /* Hover */
@@ -6992,81 +6991,35 @@ a{
 @media(max-width:768px){
 
 .side-header{
-    padding:18px 12px !important;
+    padding:14px 10px !important;
 }
 
 .side-header img{
-    width:55px !important;
-    height:55px !important;
+    width:44px !important;
+    height:44px !important;
 }
 
 .sidebar-logo-text h2{
-    font-size:17px !important;
+    font-size:13px !important;
 }
 
 .sidebar-firm-title{
-    gap:6px !important;
+    gap:5px !important;
 }
 
 .sidebar-firm-title span{
-    width:20px !important;
+    width:16px !important;
 }
 
 .sidebar-firm-title h3{
-    font-size:8px !important;
+    font-size:6px !important;
+    letter-spacing:.6px !important;
 }
 
 .sidebar-logo-text p{
-    font-size:6px !important;
-    letter-spacing:.3px !important;
-}
-
-}
-
-/*=====================================
-   BIGGER NAVBAR LOGO (OVERRIDE)
-======================================*/
-
-.logo{
-    display:flex !important;
-    align-items:center !important;
-    gap:16px !important;
-}
-
-.logo img{
-    width:96px !important;
-    height:96px !important;
-    min-width:96px !important;
-    min-height:96px !important;
-    max-width:96px !important;
-    max-height:96px !important;
-
-    object-fit:contain !important;
-    display:block !important;
-    flex-shrink:0 !important;
-
-    margin-top:-8px !important;
-    margin-bottom:-8px !important;
-}
-
-/* Navbar ki height same rahe */
-.navbar{
-    overflow:visible !important;
-}
-
-/* Mobile */
-@media(max-width:768px){
-
-.logo img{
-    width:68px !important;
-    height:68px !important;
-    min-width:68px !important;
-    min-height:68px !important;
-    max-width:68px !important;
-    max-height:68px !important;
-
-    margin-top:-5px !important;
-    margin-bottom:-5px !important;
+    font-size:5px !important;
+    letter-spacing:.2px !important;
+    line-height:1.4 !important;
 }
 
 }
@@ -7316,5 +7269,342 @@ a{
 .logo-text p b{
     margin:0 2px !important;        /* Separator ki spacing kam */
 }
+
+}
+
+/* ===============================
+   SIDEBAR SCROLL FIX
+================================ */
+
+.side-menu{
+    height:100dvh !important;
+    overflow:hidden !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+}
+
+.side-header{
+    flex-shrink:0;
+}
+
+.side-links{
+    flex:1 1 auto !important;
+
+    min-height:0 !important;
+
+    overflow-y:auto !important;
+    overflow-x:hidden !important;
+
+    padding-right:6px;
+
+    scroll-behavior:smooth;
+    -webkit-overflow-scrolling:touch;
+}
+
+.side-footer{
+    flex-shrink:0 !important;
+    margin-top:20px !important;
+}
+
+/* Scrollbar */
+
+.side-links::-webkit-scrollbar{
+    width:6px;
+}
+
+.side-links::-webkit-scrollbar-thumb{
+    background:#d4af37;
+    border-radius:20px;
+}
+
+/*=========================================
+      SIDEBAR CTA POSITION OVERRIDE
+=========================================*/
+
+.side-menu{
+    display:flex !important;
+    flex-direction:column !important;
+    height:100dvh !important;
+    overflow:hidden !important;
+}
+
+/* Links section takes remaining space */
+.side-links{
+    flex:1 1 auto !important;
+    min-height:0 !important;
+
+    overflow-y:auto !important;
+    overflow-x:hidden !important;
+
+    padding-bottom:10px !important;
+
+    scroll-behavior:smooth !important;
+    -webkit-overflow-scrolling:touch !important;
+}
+
+/* Move button upward */
+.side-footer{
+    flex-shrink:0 !important;
+
+    margin-top:8px !important;
+    padding-top:6px !important;
+    padding-bottom:10px !important;
+}
+
+/* Button */
+.menu-cta{
+    margin:0 !important;
+    width:100% !important;
+}
+
+/* Small mobile screens */
+@media (max-height:700px){
+
+    .side-header{
+        padding:12px 10px !important;
+    }
+
+    .side-links{
+        padding-bottom:6px !important;
+    }
+
+    .side-footer{
+        margin-top:4px !important;
+        padding-bottom:8px !important;
+    }
+
+    .menu-cta{
+        padding:12px 18px !important;
+        font-size:13px !important;
+    }
+
+}
+
+/* =====================================
+   SIDEBAR SPACING OVERRIDE
+===================================== */
+
+.side-links{
+    display:flex !important;
+    flex-direction:column !important;
+    gap:4px !important;
+
+    flex:1 !important;
+    overflow-y:auto !important;
+    min-height:0 !important;
+
+    padding:8px 0 !important;
+}
+
+.side-links a{
+    padding:10px 22px !important;
+    margin:0 !important;
+
+    font-size:18px !important;
+    line-height:1.2 !important;
+}
+
+.side-footer{
+    margin-top:4px !important;
+    padding-top:6px !important;
+    padding-bottom:14px !important;
+}
+
+.menu-cta{
+    margin:0 !important;
+}
+
+/* =====================================
+   MOVE CTA CLOSER TO CONTACT
+===================================== */
+
+.side-footer{
+    margin-top: 8px !important;   /* Pehle zyada hai */
+    padding-top: 0 !important;
+}
+
+.menu-cta{
+    margin-top: 0 !important;
+}
+
+/* =========================================
+   PREMIUM COMPACT SIDEBAR (FULL OVERRIDE)
+========================================= */
+
+.side-menu{
+    width:300px !important;
+    max-width:300px !important;
+    min-width:300px !important;
+
+    height:100dvh !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+
+    overflow:hidden !important;
+    box-sizing:border-box !important;
+}
+
+/* Logo */
+
+.side-header{
+    padding:14px 12px !important;
+}
+
+.side-header img{
+    width:42px !important;
+    height:42px !important;
+    margin-bottom:6px !important;
+}
+
+.sidebar-logo-text h2{
+    font-size:13px !important;
+    letter-spacing:.5px !important;
+}
+
+.sidebar-firm-title{
+    margin:4px 0 !important;
+}
+
+.sidebar-firm-title span{
+    width:16px !important;
+}
+
+.sidebar-firm-title h3{
+    font-size:6px !important;
+}
+
+.sidebar-logo-text p{
+    font-size:5px !important;
+    line-height:1.4 !important;
+}
+
+/* Menu */
+
+.side-links{
+    flex:1 !important;
+
+    overflow-y:auto !important;
+
+    padding:8px 0 !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+
+    gap:2px !important;
+}
+
+.side-links a{
+
+    padding:10px 20px !important;
+
+    margin:0 !important;
+
+    font-size:16px !important;
+
+    line-height:1.2 !important;
+}
+
+/* Button */
+
+.side-footer{
+
+    padding:8px 18px 14px !important;
+
+    margin-top:6px !important;
+
+}
+
+.menu-cta{
+
+    width:100% !important;
+
+    padding:12px 16px !important;
+
+    font-size:14px !important;
+
+    border-radius:12px !important;
+
+}
+
+/* Mobile */
+
+@media(max-width:768px){
+
+.side-menu{
+
+    width:280px !important;
+    max-width:280px !important;
+    min-width:280px !important;
+
+}
+
+}
+
+/*=========================================
+      FLOATING DESKTOP SIDEBAR
+=========================================*/
+
+@media (min-width:992px){
+
+.side-menu{
+
+    width:320px !important;
+    height:85vh !important;
+
+    top:20px !important;
+    right:20px !important;
+    bottom:20px !important;
+
+    border-radius:24px !important;
+
+    overflow:hidden !important;
+
+    display:flex !important;
+    flex-direction:column !important;
+
+    box-shadow:0 20px 60px rgba(0,0,0,.45) !important;
+}
+
+.side-links{
+
+    flex:1 !important;
+
+    overflow-y:auto !important;
+
+    min-height:0 !important;
+}
+
+.side-footer{
+
+    padding:12px 20px 20px !important;
+}
+
+}
+
+/*=========================================
+   FORCE SIDEBAR CLOSED ON PAGE LOAD
+=========================================*/
+
+@media (min-width:992px){
+
+    /* Hidden by default */
+    .side-menu:not(.active){
+        right:-360px !important;
+        visibility:hidden !important;
+        opacity:0 !important;
+        pointer-events:none !important;
+    }
+
+    /* Open only when JS adds .active */
+    .side-menu.active{
+        right:20px !important;
+        visibility:visible !important;
+        opacity:1 !important;
+        pointer-events:auto !important;
+        transition:right .45s ease,
+                   opacity .35s ease !important;
+    }
 
 }
